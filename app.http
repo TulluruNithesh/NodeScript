@@ -1,0 +1,78 @@
+Send Request
+GET http://localhost:3000/
+###
+
+Send Request
+GET http://localhost:3000/date
+###
+
+Send Request
+GET http://localhost:3000/page
+###
+
+Send Request
+GET http://localhost:3000/book/
+###
+
+Send Request
+GET http://localhost:3000/book/1/  
+###
+
+Send Request
+POST http://localhost:3000/book/
+Content-Type: application/json
+
+{
+    "book_id":5,
+    "name":"ramraj",
+    "rating":9.8
+}
+###
+
+Send Request
+PUT http://localhost:3000/book/1/
+Content-Type: application/json
+
+{
+    "book_id":1,
+    "name":"ramraj",
+    "rating":9.8
+}
+###
+
+Send Request
+DELETE http://localhost:3000/book/1/
+###
+
+Send Request
+GET http://localhost:3000/book/?offset=1&limit=3&search_q=l&order_by=rating&order=DESC
+###
+
+Send Request
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "username":"rahulshetty",
+    "name":"rahul",
+    "password":"rahul123",
+    "gender":"male",
+    "location":"hyderabad"
+}
+###
+
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "username":"heroraju",
+    "name":"raju",
+    "password":"raju1213",
+    "gender":"male",
+    "location":"chennai"
+}
+###
+
+Send Request
+GET http://localhost:3000/books?offset=2&limit=3&search_q=the&order_by=price&order=DESC
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoicmFodWwiLCJnZW5kZXIiOiJNYWxlIiwibG9jYXRpb24iOiJoeWRlcmFiYWQiLCJpYXQiOjE2MTc0MzI0MDd9.Eqevw5QE70ZAVrmOZUc6pflUbeI0ffZUmQLDHYplU8g
